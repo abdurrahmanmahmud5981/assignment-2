@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    text-transform: capitalize;
+    transition: all .4s;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* color#f5b000 */
+
+
+body{
+    /* margin: .5rem 1rem; */
+    background: #121617;
+}
+
+
+a{
+    text-decoration: none;
+  
+}
+
+
+.navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000b6;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: -0px 5px 10px #f5b000;
+    z-index: 1;
+   
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.logo span{
+    color: #f5b000;
+    font-size: 30px;
+    
+    text-shadow:  0px 0px 12px  #f5b000;
+    
+}
+
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    /* width: 50%; */
+
+}
+#nav  li a{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#nav  li:hover a{
+    background: #f5b000;
+    color: white;
+    box-shadow:  0px 0px 10px 2px #f5b000;
+
+}
+#nav li a.active{
+    background: #f5b000;
+    color: white;
+    box-shadow:  0px 0px 10px 2px #f5b000;
+
+}
+
+/* hero-area */
+.hero-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-block: 6rem;
+
+}
+.hero-area .left-hero-text{
+    width: 50%;
+}
+.hero-area .left-hero-text h2{
+    color: #f5b000;
+    font-size: 5rem;
+    font-weight: 600;
+    text-shadow:  2px 7px 25px  #f5b000;
+
+}
+.hero-area .left-hero-text p{
+    font-size: 1.5rem;
+    font-weight: 600;
+   margin: 20px 0;
+   max-width: 27rem;
+}
+.hero-area .left-hero-text button{
+    display: inline-block;
+    padding: 10px 20px ;
+    background: #f5b000;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .89;
+}
+.hero-area .left-hero-text button:hover{
+    opacity: 1;
+    box-shadow:  0px 0px 10px 2px #f5b000;
+
+}
+.hero-area .right-hero-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px;
+overflow: hidden;
+    box-shadow:  0px 0px 10px 3px #f5b000;
+
+}
+.hero-area .right-hero-img img{
+    
+    display: block;
+    width: 20rem;
+    
+}
+
+/*  */
+.belowe-hero .pricing-card .card{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    
+}
+.belowe-hero .title-of-card , .title-of-service{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.belowe-hero h4, .title-of-service h4{
+    color: #f5b000;
+}
+.belowe-hero>h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-block: .5rem 1.5rem;
+    text-transform: uppercase;
+}
+
+
+.belowe-hero .pricing-card .card .image{
+    padding: 1rem 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    box-shadow:  0px 0px 10px 5px #f5b000;
+    border-radius: 5px;
+    
+}
+.belowe-hero .pricing-card .card .image:hover{
+    box-shadow: 0px 0px 40px #f5b000;
+
+}
+.belowe-hero .pricing-card .card .image img{
+    display: block;
+    width: 15rem;
+    height: 15rem;
+}
+.belowe-hero .pricing-card .card .image h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f5b000;
+    margin-block: 1rem;
+}
+.star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+   
+}
+.fa-star-half-stroke{
+    color: #f5b000;
+}
+.belowe-hero .pricing-card .card .image button{
+    display: inline-block;
+    padding: 10px 20px ;
+    background: #f5b000;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .89;
+    color: #121617;
+}
+.belowe-hero .pricing-card .card .image button:hover{
+    opacity: 1;
+    box-shadow:  0px 0px 10px 5px #f5b000;
+
+}
+.belowe-hero .pricing-card .card .image .price{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     gap: 13px;
+}
+.belowe-hero .pricing-card .card .image .price span{
+    display: inline-block;
+    font-size: 2rem;
+}
+
+/* service */
+.service .service-order{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 1rem 2rem;
+
+}
+.service .service-order .order,.shipping,.dellivered{
+    padding: 1rem;
+    text-align: center;
+    box-shadow:  0px 0px 10px 5px #f5b000;
+    border-radius: 5px;
+    background-color: #121617;
+
+}
+.service .service-order  h2{
+    color: #f5b000;
+    font-weight: 700;
+    margin-block: 1rem;
+}
+.service .service-order p{
+    text-align: justify;
+}
+.service .service-order .fa-solid{
+    font-size: 3.5rem;
+    color: #f5b000;
+    margin-bottom: 1rem;
+    /* text-shadow: 0px 0px 10px #f5b000; */
+}
+
+/* contact */
+.contact-section{
+    text-align: center;
+    margin:  1rem 2rem;
+
+}
+.contact-section h2{
+    color: #f5b000;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-block: 2rem;
+}
+.contact-section p{
+    font-size: 1.5rem;
+    margin-block: 1.8rem;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    border: 2px solid #f5b000;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    max-width: 60vw;
+    margin: 0 auto;
+}
+input{
+    display: block;
+    border: none;
+    outline: none;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    background: #f5b000;
+}
+input::placeholder{
+    color: #000000;
+}
+label{
+    display: block;
+    margin-bottom: .2rem;
+    text-align: left;
+}
+#submit{
+    display: inline-block;
+    padding: 10px 20px ;
+    background: #f5b000;
+    outline: none;
+    border: none;
+    font-size: large;
+    font-weight: 600;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: .89;
+}
+#submit:hover{
+    opacity: 1;
+    box-shadow:  0px 0px 10px 5px #f5b000;
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.footer-menu h2{
+    color: #f5b000;
+    font-weight: 700;
+    margin-block: 1rem;
+
+}
+.footer-menu p{
+    
+    margin-block: 1rem;
+
+}
+#copyright{
+    text-align: center;
+    padding: 1rem 2rem; 
+    color: #f5b000;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.icons i {
+    color: #f5b000;
+    cursor: pointer;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.info li {
+    padding: .4rem 0rem;
+    
+}
+.info li a{
+
+    display: inline-block;
+}
+.info li:hover a{
+
+    text-decoration: underline #f5b000;
+    /* color: #f5b000; */
+
+}
+#footer-logo  {
+    color: #ffffff;
+}
+
+/* .testimonial-section {
+    background-color: #121617;
+    padding: 4rem 0;
+    color: #ffffff;
+}
+
+.testimonial-section .section-title h2 {
+    text-align: center;
+    color: #f5b000;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.testimonial-slider {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.testimonial-item {
+    flex: 0 0 auto;
+    width: 350px;
+    background: linear-gradient(145deg, #000000, #434343);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(245, 176, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    border: 3px solid #f5b000;
+}
+
+.testimonial-content {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #f5b000;
+    line-height: 1.5;
+}
+
+.testimonial-name {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-style: italic;
+} */
+
+
+.testimonial-section {
+    background-color: #2a2d34; /* Updated background color for more depth */
+    padding: 5rem 0; /* Increased padding for more space */
+    color: #ffffff;
+    text-align: center; /* Centered the text for a more unified look */
+}
+
+.testimonial-section .section-title h2 {
+    color: #f5b000;
+    margin-bottom: 3rem; /* Increased margin for more separation */
+    font-size: 3rem; /* Increased font size for emphasis */
+    font-weight: bold; /* Made the title bold for more impact */
+}
+
+.testimonial-slider {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding: 2rem; /* Increased padding for more space around items */
+    justify-content: center;
+    scroll-behavior: smooth; /* Smooth scrolling for a better experience */
+}
+
+.testimonial-item {
+    flex: 0 0 auto;
+    width: 350px;
+    background: #1c1e24; /* Darker background for each item for contrast */
+    padding: 2.5rem; /* Increased padding for more space inside items */
+    border-radius: 20px; /* Rounded corners for a softer look */
+    box-shadow: 0px 5px 25px rgba(245, 176, 0, 0.5); /* Enhanced shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.testimonial-item:hover {
+    transform: translateY(-15px); /* Increased hover effect for more emphasis */
+    box-shadow: 0px 10px 30px rgba(245, 176, 0, 0.7); /* Enhanced shadow on hover for more depth */
+}
+
+.testimonial-img {
+    width: 120px; /* Increased size for more prominence */
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    border: 4px solid #f5b000; /* Thicker border for more emphasis */
+}
+
+.testimonial-content {
+    font-size: 1.4rem; /* Increased font size for readability */
+    text-align: center;
+    margin-top: 2rem; /* Increased margin for more separation */
+    color: #f5b000;
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+.testimonial-name {
+    text-align: center;
+    margin-top: 2rem; /* Increased margin for more separation */
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+
+
